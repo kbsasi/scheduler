@@ -38,7 +38,7 @@ public class UserControllerTest {
         User sampleUser = new User("John", "Doe", "johndoe@example.com");
 
         // Mock the behavior of userService.newUser
-        Mockito.when(userService.newUser(Mockito.any(User.class))).thenReturn(sampleUser);
+        Mockito.when(userService.save (Mockito.any(User.class))).thenReturn(sampleUser);
 
         // Perform POST request with sampleUser as JSON
         mockMvc.perform(post("/createUser")
