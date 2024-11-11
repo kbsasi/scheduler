@@ -18,11 +18,13 @@ public class UserService implements IUserService {
 
     @Override
     public User save(User newUser) {
+
         return userRepository.save(newUser);
     }
 
     @Override
     public Optional<User> findById(int theId) {
+
         return userRepository.findById ( theId );
     }
 
