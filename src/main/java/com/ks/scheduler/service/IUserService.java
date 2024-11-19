@@ -11,7 +11,7 @@ public interface IUserService {
 
     User save(User newUser);
 
-    Optional<User> findById(int theId);
+  Optional<User> findById(int theId);
 
     List<User> findAll();
 
