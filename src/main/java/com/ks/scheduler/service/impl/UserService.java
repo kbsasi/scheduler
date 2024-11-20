@@ -25,12 +25,11 @@ public class UserService implements IUserService {
     @Override
     public Optional<User> findById(int theId) {
 
-        return userRepository.findById( theId );
+        return userRepository.findById ( theId );
     }
 
     @Override
     public List<User> findAll() {
-
         return userRepository.findAll();
     }
 
